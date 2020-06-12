@@ -4,58 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сталкер - центр информационных технологий</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 <body>
+    <nav class="top-menu">
+        <div class="top-menu__burger">
+            <span></span>
+        </div>
+        <div class="top-menu__items container">
+            <a href="#" class="top-menu__item link">КОМПЬЮТЕРЫ</a>
+            <a href="#" class="top-menu__item link">ТЕЛЕВИДЕНИЕ</a>
+            <a href="#" class="top-menu__item link">ФОТО И ВИДЕО</a>
+            <a href="#" class="top-menu__item link">КАНЦЕЛЯРСКИЕ ТОВАРЫ</a>
+        </div>
+        <div class="top-menu__callback">
+            <a href="#" class="top-menu__order-call">
+                <p class="top-menu__call-text">ЗАКАЗАТЬ ЗВОНОК</p>
+            </a>
+            <button class="apply apply_top">
+                <p class="apply__text">БЫСТРАЯ ЗАЯВКА</p>
+            </button>
+        </div>
+    </nav>
     <header class="header">
-        <nav class="header__top-menu">
-            <div class="content-width">
-                <a href="#" class="header__link">КОМПЬЮТЕРЫ</a>
-                <a href="#" class="header__link">ТЕЛЕВИДЕНИЕ</a>
-                <a href="#" class="header__link">ФОТО И ВИДЕО</a>
-                <a href="#" class="header__link">КАНЦЕЛЯРСКИЕ ТОВАРЫ</a>
-                <div class="header__callback">
-                    <a class="header__order-call">ЗАКАЗАТЬ ЗВОНОК</a>
-                    <button class="header__apply apply">БЫСТРАЯ ЗАЯВКА</button>
-                </div>
-            </div>
-        </nav>
-        <div class="header__body">
-            <div class="content-width">
-                <div class="header__logo">
-                    <img class="header__icon">
-                    <p class="header__subtitle">Центр информационных технологий</p>
-                    <h1 class="header__title">СТАЛКЕР</h1>
-                </div>
+        <div class="container">
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <img class="header__icon" src="image/logo.png">
+                    <div class="header__text">
+                        <p class="header__subtitle">Центр информационных технологий</p>
+                        <img class="header__title" src="image/stalker.png">
+                    </div>
+                </a>
                 <div class="header__small-info small-info">
-                    <img src="" alt="" class="small-info__icon">
+                    <img src="image/location.png" alt="" class="small-info__icon">
                     <div class="small-info__text">
                         <p class="small-info__title">пгт Апастово, ул. Гагарина, дом 4</p>
                         <p class="small-info__subtitle">Режим работы с 8:00 до 19:00</p>
                     </div>
                 </div>
                 <div class="header__small-info small-info">
-                    <img src="" alt="" class="small-info__icon">
+                    <img src="image/phone.png" alt="" class="small-info__icon">
                     <div class="small-info__text">
-                        <a class="small-info__title" href="tel:88437621200">8 (84376) 21-200</a>
+                        <a class="small-info__title small-info__title_important" href="tel:88437621200">8 (84376) 21-200</a>
                         <p class="small-info__subtitle">Позвоните нам!</p>
                     </div>
                 </div>
                 <div class="header__social-icons social-icons">
-                    <a href="#" class="social-icons__link">VK</a>
-                    <a href="#" class="social-icons__link">INSTA</a>
-                    <a href="#" class="social-icons__link">WHATSUP</a>
+                    <a href="#" class="social-icons__link"><img src="image/vk.png"></a>
+                    <a href="#" class="social-icons__link"><img src="image/insta.png"></a>
+                    <a href="#" class="social-icons__link"><img src="image/whatsup.png"></a>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="slider">
-            <div class="content-width">
-
+        <div class="banner">
+            <div class="banner__left-wing">
+                <div class="banner__top"></div>
+                <div class="banner__bot"></div>
+            </div>
+            <div class="banner__wrap container">
+                <button class="banner__play"><img src="image/play.png" alt=""></button>
+                <div class="banner__block banner__block_1">
+                    <div class="banner__top">
+                        <p class="banner__title">Смотрите более 200 каналов</p>
+                        <p class="banner__subtitle">от 1500 ₽ в год!</p>
+                    </div>
+                    <div class="banner__bot">
+                        <p class="banner__text">Просто оставьте быструю заявку</p>
+                        <button class="apply apply_main">БЫСТРАЯ ЗАЯВКА</button>
+                    </div>
+                </div>
+                <div class="banner__block banner__block_2">
+                    <div class="banner__top"></div>
+                    <div class="banner__bot">
+                        <p class="banner__title">Обмен старого приёмника на новый</p>
+                        <p class="banner__subtitle">формата HD и UHD</p>
+                        <p class="banner__text">(ультра высокой чёткости)</p>
+                    </div>
+                </div>
+                <div class="banner__block banner__block_3">
+                    <div class="banner__top">
+                        <p class="banner__title">Помощь в установке</p>
+                        <p class="banner__subtitle">от нашего специалиста</p>
+                    </div>
+                    <div class="banner__bot">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="banner__right-wing">
+                <div class="banner__top"></div>
+                <div class="banner__bot"></div>
             </div>
         </div>
-        <div class="about">
-            <div class="content-width">
+
+        <div class="container">
+            <div class="about">
                 <div class="about__item">
                     <p class="about__title about__title_important">15 лет</p>
                     <p class="about__text">Работаем для наших клиентов!</p>
@@ -74,69 +120,92 @@
                 </div>
             </div>
         </div>
+
         <div class="services">
-            <div class="content-width">
-                <div class="services__service">
-                    <img src="" alt="" class="services__img">
-                    <div class="services__content">
-                        <h3 class="services__title">Продажа и ремонт компьютеров</h3>
-                        <p class="services__text">Комфортный и качественный сервис для тех, кто хочет получить своевременный и профессиональный ремонт или имеет желание купить новую технику.</p>
-                        <button class="apply">БЫСТРАЯ ЗАЯВКА</button>
+            <div class="services__wrap">
+                <div class="container">
+                    <div class="services__service">
+                        <div class="services__img">
+                            <img src="image/1.png" alt="">
+                        </div>
+                        <div class="services__content">
+                            <h3 class="services__title">Продажа и ремонт компьютеров</h3>
+                            <p class="services__text">Комфортный и качественный сервис для тех, кто хочет получить своевременный и профессиональный ремонт или имеет желание купить новую технику.</p>
+                            <button class="apply apply_main">БЫСТРАЯ ЗАЯВКА</button>
+                        </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <img src="" alt="" class="services__img">
-                    <div class="services__content">
-                        <h3 class="services__title">Спутниковое телевидение</h3>
-                        <p class="services__text">Продажа, установка и настройка спутникового оборудования формата HD и UHD& Обмен старого приёмника на новый!</p>
-                        <button class="apply">БЫСТРАЯ ЗАЯВКА</button>
+            </div>
+            <div class="services__wrap">
+                <div class="container">
+                    <div class="services__service">
+                        <div class="services__img">
+                            <img src="image/2.png" alt="">
+                        </div>
+                        <div class="services__content">
+                            <h3 class="services__title">Спутниковое телевидение</h3>
+                            <p class="services__text">Продажа, установка и настройка спутникового оборудования формата HD и UHD& Обмен старого приёмника на новый!</p>
+                            <button class="apply apply_main">БЫСТРАЯ ЗАЯВКА</button>
+                        </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <img src="" alt="" class="services__img">
-                    <div class="services__content">
-                        <h3 class="services__title">Канцелярские товары</h3>
-                        <p class="services__text">Широкий ассортимент канцелярских товаров и сопутствующих принадлежностей для любой сферы деятельности</p>
-                        <button class="apply">БЫСТРАЯ ЗАЯВКА</button>
+            </div>
+            <div class="services__wrap">
+                <div class="container">
+                    <div class="services__service">
+                        <div class="services__img">
+                            <img src="image/3.png" alt="">
+                        </div>
+                        <div class="services__content">
+                            <h3 class="services__title">Канцелярские товары</h3>
+                            <p class="services__text">Широкий ассортимент канцелярских товаров и сопутствующих принадлежностей для любой сферы деятельности</p>
+                            <button class="apply apply_main">БЫСТРАЯ ЗАЯВКА</button>
+                        </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <img src="" alt="" class="services__img">
-                    <div class="services__content">
-                        <h3 class="services__title">Фото и видео услуги</h3>
-                        <p class="services__text">Срочная фотография за 5 мин, все виды цифровой печати высокого качества. Печать на футболках, брелках и многих видах сувенирной продукции.</p>
-                        <button class="apply">БЫСТРАЯ ЗАЯВКА</button>
+            </div>
+            <div class="services__wrap">
+                <div class="container">
+                    <div class="services__service">
+                        <div class="services__img">
+                            <img src="image/4.png" alt="">
+                        </div>
+                        <div class="services__content">
+                            <h3 class="services__title">Фото и видео услуги</h3>
+                            <p class="services__text">Срочная фотография за 5 мин, все виды цифровой печати высокого качества. Печать на футболках, брелках и многих видах сувенирной продукции.</p>
+                            <button class="apply apply_main">БЫСТРАЯ ЗАЯВКА</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <div class="content-width">
+        <div class="footer__body container">
             <div class="footer__block">
                 <h4 class="footer__title">Заявка</h4>
                 <div class="footer__small-info small-info">
-                    <img src="" alt="" class="small-info__icon">
+                    <img src="image/phone_white.png" alt="" class="small-info__icon">
                     <div class="small-info__text">
-                        <p class="small-info__title">Бесплатная консультация</p>
-                        <a class="small-info__subtitle" href="tel:88437621200">8 (84376) 21-200</a>
+                        <a class="small-info__title" href="tel:88437621200">8 (84376) 21-200</a>
+                        <p class="small-info__subtitle">Бесплатная консультация</p>
                     </div>
                 </div>
             </div>
             <div class="footer__block">
                 <h4 class="footer__title">Адрес</h4>
                 <div class="footer__small-info small-info">
-                    <img src="" alt="" class="small-info__icon">
+                    <img src="image/location_white.png" alt="" class="small-info__icon">
                     <div class="small-info__text">
-                        <p class="small-info__title">Режим работы с 8:00 до 19:00</p>
-                        <p class="small-info__subtitle">пгт Апастово, ул. Гагарина, дом 4</p>
+                        <p class="small-info__title">пгт Апастово, ул. Гагарина, дом 4</p>
+                        <p class="small-info__subtitle">Режим работы с 8:00 до 19:00</p>
                     </div>
                 </div>
             </div>
             <div class="footer__block">
                 <h4 class="footer__title">Реквизиты</h4>
                 <div class="footer__small-info small-info">
-                    <img src="" alt="" class="small-info__icon">
+                    <img src="image/download_white.png" alt="" class="small-info__icon">
                     <div class="small-info__text">
                         <p class="small-info__title">
                             <a href="" class="small-info__link">Скачать</a>
@@ -147,16 +216,26 @@
             </div>
             <div class="footer__block">
                 <h4 class="footer__title">Соц. сети</h4>
-                <div class="footer__social-icons social-icons">
-                    <a href="#" class="social-icons__link">VK</a>
-                    <a href="#" class="social-icons__link">INSTA</a>
-                    <a href="#" class="social-icons__link">WHATSUP</a>
+                <div class="footer__small-info footer__social-icons social-icons">
+                    <a href="#" class="social-icons__link"><img src="image/vk_white.png"></a>
+                    <a href="#" class="social-icons__link"><img src="image/insta_white.png"></a>
+                    <a href="#" class="social-icons__link"><img src="image/whatsup_white.png"></a>
                 </div>
             </div>
         </div>
         <div class="footer__map">
-            [ карта ]
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa659e09741c425c1a13519ba1605367674f904c48ebb3ff33a58ca568fd94d69&amp;width=100%25&amp;height=290&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="footer__wrap">
+            <div class="container">
+                <div class="footer__text">
+                    <span>© Apas-stalker.ru 2019    -    Все права защищены.</span>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="script/burger.js"></script>
+    <script src="script/spoiler.js"></script>
 </body>
 </html>
