@@ -311,29 +311,27 @@ a {
 		&_1 {
 			height: 100%;
 			.banner__top {
-				padding-left: 40px;
+				padding: 0 40px;
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-end;
 				background: rgba(57, 89, 224, 0.8);
 			}
 			.banner__bot {
-				padding-left: 40px;
+				padding: 42px 40px 92px 40px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				align-items: flex-start;
-				padding-top: 42px;
-				padding-bottom: 92px;
 				box-sizing: border-box;
 				background: rgba(57, 89, 224, 0.4);
 			}
 			.banner__title {
-				@include adaptive-font(51, 40);
+				@include adaptive-font(51, 35);
 				font-weight: 700;
 			}
 			.banner__subtitle {
-				@include adaptive-font(51, 40);
+				@include adaptive-font(51, 35);
 				font-weight: 300;
 			}
 			.banner__text {
@@ -579,51 +577,60 @@ a {
 }
 
 @media (max-width: 320px) {
-
 	.header__body {
 		justify-content: center;
 	}
-
 	.banner {
-
-		&__block_1 .banner__top,
-		&__block_1 .banner__bot {
-			box-sizing: border-box;
-			padding: 10px;
-		}
-
 		&__block_1 .banner__bot {
 			justify-content: space-around;
 		}
-
 		&__text {
 			text-align: center;
 		}
-
 	}
-
-	.about {
-		padding: 0 10px 10px 10px;
-	}
-	
 	.services__title{
 		text-align: center;
 	}
-
 }
 
 @media (max-width: 411px) {
+	.top-menu__item.link {
+		
+	}
 	.apply {
 		width: 100%;
+	}		
+	.banner__block_1 .banner__top,
+	.banner__block_1 .banner__bot {
+		box-sizing: border-box;
+		padding: 10px;
+	}
+	.banner__block_1 .banner__bot {
+		justify-content: space-around;
+		box-sizing: border-box;
+		padding: 10px;
+	}	
+	.about {
+		padding: 0 10px 10px 10px;
 	}
 }
 
 @media (max-width: 640px) {
-	.banner__block_1 {
-		width: 100%!important;
-	}
-	.banner__block_2 {
-		display: none;
+	.banner {
+		&__block_1 {
+			width: 100%!important;
+			.banner__top {
+				justify-content: center;
+			}
+			.banner__title,
+			.banner__subtitle
+			{
+				text-align: center;
+			}
+		}
+		&__block_2 {
+			display: none;
+		}
 	}
 	.about {
 
@@ -687,7 +694,9 @@ a {
 		}
 
 		&__item.link {
-			@include adaptive-font(36, 20);
+			@include adaptive-font(36, 18);
+			border: 0;
+			margin-bottom: 20px;
 		}
 
 		&__burger {

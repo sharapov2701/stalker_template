@@ -264,29 +264,27 @@ a {
   height: 100%;
 }
 .banner__block_1 .banner__top {
-  padding-left: 40px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background: rgba(57, 89, 224, 0.8);
 }
 .banner__block_1 .banner__bot {
-  padding-left: 40px;
+  padding: 42px 40px 92px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 42px;
-  padding-bottom: 92px;
   box-sizing: border-box;
   background: rgba(57, 89, 224, 0.4);
 }
 .banner__block_1 .banner__title {
-  font-size: calc(40px + 11 * ((100vw - 320px) / 940));
+  font-size: calc(35px + 16 * ((100vw - 320px) / 940));
   font-weight: 700;
 }
 .banner__block_1 .banner__subtitle {
-  font-size: calc(40px + 11 * ((100vw - 320px) / 940));
+  font-size: calc(35px + 16 * ((100vw - 320px) / 940));
   font-weight: 300;
 }
 .banner__block_1 .banner__text {
@@ -496,19 +494,11 @@ a {
     justify-content: center;
   }
 
-  .banner__block_1 .banner__top, .banner__block_1 .banner__bot {
-    box-sizing: border-box;
-    padding: 10px;
-  }
   .banner__block_1 .banner__bot {
     justify-content: space-around;
   }
   .banner__text {
     text-align: center;
-  }
-
-  .about {
-    padding: 0 10px 10px 10px;
   }
 
   .services__title {
@@ -519,12 +509,34 @@ a {
   .apply {
     width: 100%;
   }
+
+  .banner__block_1 .banner__top,
+.banner__block_1 .banner__bot {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .banner__block_1 .banner__bot {
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .about {
+    padding: 0 10px 10px 10px;
+  }
 }
 @media (max-width: 640px) {
   .banner__block_1 {
     width: 100% !important;
   }
-
+  .banner__block_1 .banner__top {
+    justify-content: center;
+  }
+  .banner__block_1 .banner__title,
+.banner__block_1 .banner__subtitle {
+    text-align: center;
+  }
   .banner__block_2 {
     display: none;
   }
@@ -575,7 +587,9 @@ a {
     padding: 0;
   }
   .top-menu__item.link {
-    font-size: calc(20px + 16 * ((100vw - 320px) / 940));
+    font-size: calc(18px + 18 * ((100vw - 320px) / 940));
+    border: 0;
+    margin-bottom: 20px;
   }
   .top-menu__burger {
     display: block;
