@@ -525,6 +525,10 @@ a {
   .about {
     padding: 0 10px 10px 10px;
   }
+
+  .services {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 640px) {
   .banner__block_1 {
