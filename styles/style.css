@@ -50,6 +50,11 @@ a {
 .small-info__title {
   font-size: calc(14px + 5 * ((100vw - 320px) / 940));
 }
+@media (min-width: 1800px) {
+  .small-info__title {
+    font-size: 19px;
+  }
+}
 .small-info__subtitle {
   font-size: 12px;
 }
@@ -222,7 +227,6 @@ a {
 }
 .banner__left-wing {
   height: 100%;
-  width: 100%;
   flex: 1;
 }
 .banner__left-wing .banner__top {
@@ -230,6 +234,13 @@ a {
 }
 .banner__left-wing .banner__bot {
   background: rgba(57, 89, 224, 0.4);
+}
+.banner__right-wing {
+  height: 100%;
+  flex: 1;
+}
+.banner__right-wing .banner__top {
+  background: rgba(57, 89, 224, 0.8);
 }
 .banner__wrap {
   display: flex;
@@ -283,9 +294,19 @@ a {
   font-size: calc(35px + 16 * ((100vw - 320px) / 940));
   font-weight: 700;
 }
+@media (min-width: 1800px) {
+  .banner__block_1 .banner__title {
+    font-size: 51px;
+  }
+}
 .banner__block_1 .banner__subtitle {
   font-size: calc(35px + 16 * ((100vw - 320px) / 940));
   font-weight: 300;
+}
+@media (min-width: 1800px) {
+  .banner__block_1 .banner__subtitle {
+    font-size: 51px;
+  }
 }
 .banner__block_1 .banner__text {
   font-size: 25px;
@@ -329,14 +350,7 @@ a {
 }
 .banner__title {
   font-family: "Gilroy Extra Bold";
-}
-.banner__right-wing {
-  height: 100%;
-  width: 100%;
-  flex: 1;
-}
-.banner__right-wing .banner__top {
-  background: rgba(57, 89, 224, 0.8);
+  letter-spacing: 1px;
 }
 
 .apply_main {
@@ -418,6 +432,11 @@ a {
   font-family: "Gilroy Extra Bold";
   font-size: calc(28px + 18 * ((100vw - 320px) / 940));
   font-weight: 400;
+}
+@media (min-width: 1800px) {
+  .services__title {
+    font-size: 46px;
+  }
 }
 .services__text {
   opacity: 0.8;
@@ -595,6 +614,13 @@ a {
     border: 0;
     margin-bottom: 20px;
   }
+}
+@media (max-width: 767px) and (min-width: 1800px) {
+  .top-menu__item.link {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
   .top-menu__burger {
     display: block;
     position: absolute;
@@ -642,11 +668,13 @@ a {
     top: 9px;
     transition: all 0.3s ease 0s;
   }
-
+}
+@media (max-width: 767px) {
   .banner__play {
     display: none;
   }
-
+}
+@media (max-width: 767px) {
   .services__service {
     flex-direction: column !important;
     align-items: center;
